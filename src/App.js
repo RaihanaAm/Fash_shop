@@ -7,12 +7,12 @@ import { Product } from "./Pages/product/product"
 import { Route, Routes } from "react-router-dom"
 import { Nav } from "./layout/navbar/navbar"
 
+
 export const App = () => {
 
   return (
     <div>
       <Nav />
-
       <Routes>
         {/* <Route path="*" element={<Error />}/> */}
         <Route exact path="/" element={<Home />} />

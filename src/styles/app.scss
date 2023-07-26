@@ -1,1 +1,27 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"; 
+@import "./variable.scss";
+.active {
+    color: $red !important;
+}
+// .flex-center{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .flex-evenly{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+// }
+// .flex-column-evenly{
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+// }
+// .flex-column-center{
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content: center;
+// }

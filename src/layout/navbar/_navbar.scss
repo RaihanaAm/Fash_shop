@@ -1,6 +1,15 @@
 @import "../../styles/variable";
+@font-face {
+  font-family: "poppins";
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "black";
+  src: url(../../assets/fonts/Poppins-Black.ttf);
+}
 
 .navitem {
+  font-family: "poppins";
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +18,8 @@
   .logo {
     h1 {
       margin: 0;
-      font-weight: bold;
+      font-weight: bolder;
+      font-family:  "black";
       color: black !important;
       span {
         color: $red;
@@ -40,6 +50,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 30px;
+   
    .hr{
     color: rgb(189, 189, 189);
    }
@@ -64,7 +75,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: black;
+            background-color: $red;
             border-radius: 100%;
             padding: 8px;
             p{

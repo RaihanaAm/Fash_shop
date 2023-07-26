@@ -5,13 +5,13 @@ import { AiOutlineShopping } from "react-icons/ai";
 export const Nav = () => {
     return (
 
-        <nav className="navitem ">
+        <nav className="navitem  ">
             <div className="logo">
                 <NavLink to={"/"} className="nav-link">
                     <h1>Fashion<span>.</span></h1>
                 </NavLink>
             </div>
-            <div className="items">
+            <div className="items d-none d-md-flex ">
                 <ul>
                     <li>
                         <NavLink to={"/"} className="item">Home
@@ -32,7 +32,7 @@ export const Nav = () => {
                 </ul>
             </div>
 
-            <div className="icons">
+            <div className="icons d-none d-md-flex">
                 <div className="coeur">
                     <h5 ><MdFavoriteBorder /></h5>
                 </div>
@@ -42,12 +42,6 @@ export const Nav = () => {
                     <div className="number"><p>1</p></div>
                 </div>
             </div>
-
-
-
-
-
-
         </nav>
     )
 }

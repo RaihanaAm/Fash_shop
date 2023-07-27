@@ -13,8 +13,8 @@ export const Footer = () => {
 
     return (
         <footer className="footer">
-            <div className="items">
-                <div className="touch">
+            <div className="items d-block d-md-flex">
+                <div className="touch ">
                     <h4>GET IN TOUCH</h4>
                     <p className="qst">Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
                     <div className="d-flex icons">

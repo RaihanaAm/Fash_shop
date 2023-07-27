@@ -54,11 +54,11 @@ export const App = () => {
     product("Fashionista's Paradise", 75, "women", "new", women1),
     product("Elegant Ensembles", 105, "women", "new", women2),
     product("Comfy Women's Casuals", 260, "women", "new", women3),
-    product("Free-Spirited Women's Fashion", 30, "women", "sold", women4),
+    product("Free-Spirited Women's ", 30, "women", "sold", women4),
     product("Athleisure Avenue", 98, "women", "sold", women5),
-    product("Women's Vintage Collection", 22, "women", "sold", women6),
-    product("Women's Professional Attire", 168, "women", "old", women7),
-    product("Women's Beachwear Collection", 200, "women", "old", women8),
+    product("Women's Vintage ", 22, "women", "sold", women6),
+    product("Women's Professional", 168, "women", "old", women7),
+    product("Women's Beachwear ", 200, "women", "old", women8),
     // **men
     product("ExecutiveBlend Suit", 196,"men","new",men1),
     product("UrbanEdge Jeans", 730,"men","new",men2),
@@ -71,30 +71,30 @@ export const App = () => {
     // *kids
     product("TinyTots Rompers", 146,"kids","new",kids1),
     product("CuddleCloud Onesies", 78,"kids","new",kids2),
-    product("AdventureSeeker Backpacks", 152,"kids","new",kids3),
+    product("AdventureSeeker ", 152,"kids","new",kids3),
     product("DinoRoar T-shirts", 975,"kids","sold",kids4),
-    product("MiniExplorers Cargo Shorts", 397,"kids","sold",kids5),
+    product("MiniExplorers Cargo ", 397,"kids","sold",kids5),
     product("TinyTrendsetters ", 834,"kids","sold",kids6),
     product("CloudHopper", 245,"kids","sold",kids7),
     product("TeddyBear Plush", 99,"kids","sold",kids8)
   ])
-  const [women,setWomen]=useState([]);
-  const [men,setMen]=useState([]);
-  const [kids,setKids]=useState([]);
+  const [solde,setSolde]=useState([]);
+  const [news,setNews]=useState([]);
+  const [old,setOld]=useState([]);
   useEffect(()=>{
     let girl = [];
     let boy = [];
     let kid = [];
     for (let index = 0; index < AllProducts.length; index++) {
       let element = AllProducts[index];
-      switch (element.categorie) {
-        case "women":
+      switch (element.type) {
+        case "new":
           girl.push(element)
           break;
-          case "men":
+          case "sold":
             boy.push(element)
           break;
-          case "kids":
+          case "old":
             kid.push(element)
           break;
         default:
@@ -102,9 +102,9 @@ export const App = () => {
       }
       
     }
-    setWomen(girl)
-    setMen(boy)
-    setKids(kid)
+    setSolde(boy)
+    setNews(girl)
+    setOld(kid)
 
   },[AllProducts])
   return (
@@ -112,12 +112,13 @@ export const App = () => {
       <Nav />
       <Routes>
         {/* <Route path="*" element={<Error />}/> */}
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home AllProducts={AllProducts}  solde={solde}  news={news} old={old} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/panier" element={<Panier />} />
+
       </Routes>
 
     </div>

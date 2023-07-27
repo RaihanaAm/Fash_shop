@@ -1,8 +1,11 @@
+import { Header } from "../../layout/header"
 import "./_product.scss"
-export const Product =()=>{
-    return(
+import src from "../../assets/images/bg.jpg"
+
+export const Product = () => {
+    return (
         <div>
-            Product
+            <Header title={"PRODUCT"} src={src} />
         </div>
     )
 }

@@ -35,6 +35,7 @@ import kids5 from "./assets/images/kids/kid5.jpg"
 import kids6 from "./assets/images/kids/kid6.jpg"
 import kids7 from "./assets/images/kids/kid7.jpg"
 import kids8 from "./assets/images/kids/kid8.jpg"
+import { Footer } from "./layout/footer/footer"
 
 
 
@@ -120,6 +121,7 @@ export const App = () => {
         <Route path="/panier" element={<Panier />} />
 
       </Routes>
+      <Footer/>
 
     </div>
   )

@@ -27,6 +27,7 @@
         margin-bottom: 20px;
       }
       textarea {
+        outline: none;
         padding: 10px;
         width: 400px;
         border: 1px solid rgb(224, 224, 224);
@@ -53,6 +54,7 @@
       form {
         textarea {
             width: 320px;
+
           }
       }
     }

@@ -27,7 +27,7 @@ import men6 from "./assets/images/men/money.jpg"
 import men7 from "./assets/images/men/shirt.jpg"
 import men8 from "./assets/images/men/shop-item-09.jpg"
 // && kids 
-import kids1 from "./assets/images/kids/kid1.jpg"
+import kids1 from "./assets/images/kids/kid1.jpeg"
 import kids2 from "./assets/images/kids/kid2.jpg"
 import kids3 from "./assets/images/kids/kid3.jpg"
 import kids4 from "./assets/images/kids/kid4.jpg"
@@ -116,7 +116,7 @@ export const App = () => {
         <Route exact path="/" element={<Home AllProducts={AllProducts}  solde={solde}  news={news} old={old} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={<Product AllProducts={AllProducts}  solde={solde}  news={news} old={old} />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/panier" element={<Panier />} />
 
